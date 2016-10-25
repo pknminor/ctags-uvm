@@ -1,0 +1,34 @@
+" Ctags, look for tag file recursively upward from cwd
+set tags=tags;/
+"set tags=./tags;
+set tags+=~/.vim/tags/UVM
+
+" TagBar Systemverilog
+" http://stackoverflow.com/questions/22243241/systemverilog-support-in-tagbar-plugin
+"
+" let g:tagbar_type_verilog_systemverilog = {
+let g:tagbar_type_systemverilog = {
+        \ 'ctagstype'   : 'systemverilog',
+        \ 'kinds'       : [
+            \ 'b:includes:1',
+            \ 'c:classes:1',
+            \ 'e:typedefs:1',
+            \ 'd:defines:1',
+            \ 'm:modules:1',
+            \ 'p:programs:1',
+            \ 't:tasks:1',
+            \ 'f:functions:1',
+            \ 'i:interfaces:1',
+            \ 'o:macros:1',
+            \ 'v:variables:1'
+        \ ],
+        \ 'sort'        : 0,
+        \ 'sro'         : '.',
+    \ }
+
+" Make omnicomplete work for systemverilog using a tags file
+"http://stackoverflow.com/questions/25860915/autocomplete-systemverilog-in-vim
+augroup Systemverilog
+    autocmd!
+    autocmd FileType systemverilog setlocal omnifunc=syntaxcomplete#Complete
+augroup END
