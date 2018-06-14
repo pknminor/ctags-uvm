@@ -27,8 +27,5 @@
 --regex-systemverilog=/^\s*(\b\w+\b)+\s*(\b\w+\b)+\s*,\s*(\b\w+\b)+\s*;/\3/v,variables,variables (variable ...)/
 --regex-systemverilog=/^\s*(\b\w+\b)+\s*(\b\w+\b)+\s*,\s*(\b\w+\b)+\s*,\s*(\b\w+\b)+\s*;/\4/v,variables,variables (variable ...)/
 --regex-systemverilog=/^\s*(\b\w+\b)+\s*(\b\w+\b)+\s*,\s*(\b\w+\b)+\s*,\s*(\b\w+\b)+\s*,\s*(\b\w+\b)+\s*;/\5/v,variables,variables (variable ...)/
-# TBD : add events, maybe as separate kind
-
 --regex-systemverilog=/(\b(parameter|localparam)\b).+(\b\w+\b)\s*=/\3/a,parameters,parameters (parameter ...)/
-
 --systemverilog-kinds=+ctfmpiedbo
