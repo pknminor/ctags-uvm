@@ -1,1 +1,1 @@
-# uvm_tags
+# crude setup for exuberant ctags and vim Tagbar for Systemverilog  
