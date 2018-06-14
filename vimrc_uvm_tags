@@ -26,7 +26,6 @@ let g:tagbar_type_systemverilog = {
         \ 'sro'         : '.',
     \ }
 
-"http://stackoverflow.com/questions/25860915/autocomplete-systemverilog-in-vim
 augroup Systemverilog
     autocmd!
     autocmd FileType systemverilog setlocal omnifunc=syntaxcomplete#Complete
