@@ -32,3 +32,4 @@ augroup Systemverilog
     autocmd!
     autocmd FileType systemverilog setlocal omnifunc=syntaxcomplete#Complete
 augroup END
+
