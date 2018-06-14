@@ -1,7 +1,9 @@
-" Ctags, look for tag file recursively upward from cwd
+" look for tag file recursively upward from cwd
 set tags=tags;/
 "set tags=./tags;
-set tags+=~/.vim/tags/UVM
+
+" append tags generated from UVM library
+"set tags+=~/.vim/tags/UVM
 
 " TagBar Systemverilog
 " http://stackoverflow.com/questions/22243241/systemverilog-support-in-tagbar-plugin
